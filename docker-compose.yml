@@ -1,0 +1,9 @@
+
+services:
+  app:
+    container_name: node-ts-boilerplate
+    build: ./
+    ports:
+      - "127.0.0.1:5001:5001"
+    # command: npm run dev # uncomment this line while local development
+    restart: always
